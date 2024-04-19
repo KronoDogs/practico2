@@ -123,9 +123,6 @@ proc_data <- as.data.frame(proc_data)
 stargazer(proc_data, type ="text")
 
 
-#recuerda preguntar al profe sobre guardar y el tema de las carpetas para organizarlas despues.
-
-
 proc_data %>% dplyr::group_by(sexo) %>% summarise(mean(afav.latin, na.rm=TRUE))
 
 proc_data %>% dplyr::group_by(sexo) %>% summarise(mean(afav.venz, na.rm=TRUE))
@@ -137,7 +134,7 @@ proc_data %>% dplyr::group_by(sexo) %>% summarise(mean(conf.md, na.rm=TRUE))
 proc_data %>% dplyr::group_by(clasesocial) %>% summarise(mean(conf.md, na.rm=TRUE))
 
 #instalamos sjplot para la representación, segun clase social: conf.md - afav.latin - afav.venz (output carpet)
-
+#Representacion de tablas descriptivas para las variables
 library(sjPlot)
 
 sjt.xtab(proc_data$clasesocial, proc_data$conf.md, encoding = "UTF-12")
@@ -154,6 +151,40 @@ sjt.xtab(proc_data$sexo, proc_data$afav.latin, encoding = "UTF-12")
 
 sjt.xtab(proc_data$sexo, proc_data$afav.venz, encoding = "UTF-12")
 
+
+#Tabla descriptiva de las medidas de tendencia central
+
+# Calcular la moda
+get_mode <- function(x) {
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+
+# Calcular las medidas de tendencia central
+media <- c(mean(proc_data$clasesocial), mean(proc_data$afav.venz), mean(proc_data$afav.latin), mean(proc_data$conf.md))
+mediana <- c(median(proc_data$clasesocial), median(proc_data$afav.venz), median(proc_data$afav.latin), median(proc_data$conf.md))
+moda <- c(get_mode(proc_data$clasesocial), get_mode(proc_data$afav.venz), get_mode(proc_data$afav.latin), get_mode(proc_data$conf.md))
+
+# Crear la tabla descriptiva
+tabla_descriptiva <- data.frame(
+  Variable = c("Clase Social", "afav.venz", "afav.latin", "conf.md"),
+  Media = media,
+  Mediana = mediana,
+  Moda = moda
+)
+
+
+# Formatear la tabla con kableExtra
+tabla_mtc<- tabla_descriptiva %>%
+  kbl() %>%
+  kable_styling(full_width = FALSE) %>%
+  row_spec(0, bold = TRUE)
+
+# Mostrar la tabla en el Viewer de RStudio
+tabla_mtc
+
+
+
 #Librerias para graficos y tablas
 pacman::p_load(sjlabelled,
                dplyr, 
@@ -168,14 +199,11 @@ pacman::p_load(sjlabelled,
                haven,
                tidyverse) 
 
-#Tabla descriptiva de las variables para la sección metodológica
-stargazer(proc_data,type = "text")
+proc_data <-na.omit(proc_data) #Borramos casos perdidos ya que no bajan tanto 
+# el numero total de observaciones.
 
-dfSummary(proc_data, plain.ascii = FALSE)
 
-view(summarytools::dfSummary(proc_data, headings=FALSE))
-
-#Nada se puede, a por los graficos
+#Visualización de Variables
 
 ggplot(proc_data, aes(x = conf.md))
 
@@ -188,21 +216,29 @@ proc_data %>% ggplot(aes(x = afav.latin)) + geom_bar(fill="purple")
 
 proc_data %>% ggplot(aes(x = afav.venz)) + geom_bar(fill="purple")
 
-proc_data %>% ggplot(aes(x = conf.md)) + geom_bar(fill="purple")
+proc_data %>% ggplot(aes(x = clasesocial)) + geom_bar(fill="purple")
 
-proc_data %>% ggplot(aes(x = conf.md)) + geom_bar(fill="purple")
-
-
-
+#grafico a favor de la inmigracion en Chile
 graf.in <- sjPlot::plot_stackfrq(dplyr:: select(proc_data, afav.venz,
                                                 afav.latin),
-                                                title= "A favor de la inmigración") + 
+                                                title= "A favor de la inmigración: Chile") + 
   theme(legend.position="bottom")
 
 graf.in
 
+#grafico, comportamiento de la variable confianza en los medios de comunicacion
 
+graf.conf.md <- sjPlot::plot_stackfrq(dplyr:: select(proc_data,conf.md),
+                                 title= "Confianza en los medios de comunicación") + 
+  theme(legend.position="bottom")
+
+graf.conf.md
+#=============
 ggsave(graf.in, file="output/graficoinmigracion.pdf")
+ggsave(graf.conf.md, file="output/graficomedios.pdf")
+#los demas graficos y tablas guardados en la carpeta output
+
+#grafico, confianza en los medios de comunicacion por sexo       
 
 graf.insex <- proc_data %>% ggplot(aes(x = conf.md, fill = sexo)) + 
   geom_bar() +
@@ -213,4 +249,28 @@ graf.insex <- proc_data %>% ggplot(aes(x = conf.md, fill = sexo)) +
 
 graf.insex
 
-ggsave(graf.in, file="output/graficoinmigracionsex")
+ggsave(graf.insex, file="output/graficoinsex.pdf")
+
+#Grafico a favor de la inmigracion latina segun clase social
+
+proc_data %>% ggplot(aes(x = afav.latin)) + 
+  geom_bar() +
+  xlab("A favor de la inmigración latina") +
+  ylab("Cantidad")+
+  facet_wrap(~clasesocial)
+frq(proc_data$clasesocial)
+
+
+proc_data %>% ggplot(aes(x = afav.latin)) + 
+  geom_bar() +
+  xlab("A favor de la inmigración latina") +
+  ylab("Cantidad")+
+  facet_wrap(~sexo)
+
+frq(proc_data$sexo)
+
+#guardar base proc_data para quarto documment
+
+save(proc_data, file="input/data/proc_data.RData")
+
+d

@@ -1,0 +1,3 @@
+[2,"\n"]
+[1,"Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : \r\n  namespace 'xfun' 0.38 is being loaded, but >= 0.43 is required\r\nCalls: loadNamespace ... namespaceImportFrom -> asNamespace -> loadNamespace\r\nEjecución interrumpida\r\n"]
+[1,"\nR installation:\n  Version: 4.2.3\n  Path: C:/PROGRA~1/R/R-42~1.3\n  LibPaths:\n    - C:/Users/crono/AppData/Local/R/win-library/4.2\n    - C:/Program Files/R/R-4.2.3/library\n  knitr: (None)\n  rmarkdown: (None)\n\nThe rmarkdown package is not available in this R installation.\nInstall with install.packages(\"rmarkdown\")\n\n"]

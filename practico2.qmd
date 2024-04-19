@@ -13,5 +13,70 @@ Durante el transcurso del nuevo milenio, en Chile, se ha evidenciado un cierto a
 
 La importancia de una postura discriminatoria del ciudadano común hacia el migrante, nos presenta un escenario muy particular, ya que, el sentido común nos lleva a crear un imaginario colectivo hacia la imagen de la persona que busca establecerse en otro lugar ajeno el de su origen, que de cierto modo, invita a examinar el rol que cumple los medios de comunicación y su influencia en este discurso intersubjetivo, en donde se podría reconocer una especie de relación entre dos variables planteadas, que a mayor exposición a noticias negativas a la población migrante, peor será la opinión de los sujetos hacia ellos, promoviendo un rol discriminador hacia ellos. En este punto es importante recalcar que los medios de comunicación, ya no es particularmente sólo a los canales de noticias, sino que, también lo es internet y las redes sociales, las cuales se configuran como potentes "herramientas que colaboren en la creación de una sociedad más participativa en materia política y social" [@laurabustosmartinezDiscursosOdioEpidemia2019]. Sin embargo, un fenómeno tan masivo como lo es internet, no presenta una sola cara, sino que, da lugar a la promoción de discursos de odio hacia diferentes grupos étnicos, lo cual, da el paso a las tan famosas noticias falsas o *fake news*, en donde, "pocas personas tienen la facultad, el tiempo y las habilidades de distinguir entre sesgos informativos, falsas noticias y simplificaciones" [@nicolasgissiEntreMiedoXenofobia2023], y esto resulta relevante a la hora de discutir los roles que tienen medios importantes de comunicación y la importancia que tiene las redes sociales a la hora de impactar e influir tanto en la percepción y actuar del ciudadano chileno hacia el migrante. De esta manera, entenderíamos que los roles que ejercen los medios de comunicación masivos influyen de distintas maneras el actuar y pensar de los ciudadanos chilenos sobre la población migrante. Entonces, a medida de que un ciudadano chileno se encuentre expuesto a noticias mediáticas y de índole negativa acerca de algún acontecimiento que tenga lugar con una persona migrante, peor será su opinión sobre la población migrante, lo cual, permite y da paso a optar por un discurso discriminatorio. Por lo tanto, la creciente crisis migratoria y sus consecuencias sociales han producido una gran controversia en diferentes dimensiones para el Estado chileno, y para la propia ciudadanía, parece ser que el optar por posiciones discriminatorias resulta cada vez más un camino reconfortante, en donde, se le exige al gobierno medidas mucho más punitivas, dejando de lado soluciones acordes a los tratados gubernamentales, como los Derechos Humanos, debido que, existirían "muchos migrantes latinoamericanos reciben un trato discriminatorio al enfrentar las expulsiones u otras sanciones sin los estándares mínimos del debido proceso" [@danielquinterosNUEVACRIMIGRACIONVIEJA2016], lo cual, invita a la a la reflexión académica sobre esta pregunta direccionada hacia un problema estructural de la migración "¿estamos ante una crisis migratoria o ante una migración a causa de la crisis?" [@lucianagandiniCrisisMigracionPoblacion2020] y claro, en primera instancia se evidencia que la crisis migratoria ha generado múltiples estragos sistémicos en el país trasandino, sin embargo, después de un breve análisis, podríamos pensar que la crisis migratoria solo es una respuesta a problemas estructurales de las naciones comprometidas de América Latina, como lo es en el caso venezolano.\
 
+A partir de la base de datos proporcionada por Latinobarometro (2020), en donde se seleccionó algunas variables en función de la hipótesis planteada con anterioridad. En donde, se determinó utilizar la confianza en los medios de comunicación, a favor de la inmigración Venezonala y a favor de la inmigración de la inmigracion de personas pertenecientes a América Latina, todo esto a partir de las observaciones limitadas a las respuestas proporcionadas por los encuestados chilenos. De este modo,
+
+```{r}
+#| warning: false
+#| echo: false
+
+pacman::p_load(sjmisc, car, sjlabelled, haven)
+
+pacman::p_load(sjlabelled,
+               dplyr, 
+               stargazer,
+               summarytools, 
+               kableExtra, 
+               sjPlot,
+               corrplot, 
+               sessioninfo, 
+               ggplot2,
+               tidyverse,
+               xfun)
+             
+
+```
+
+```{r}
+#| warning: false
+#| echo: false
+
+
+
+load("input/data/proc_data.RData")
+
+#Tabla descriptiva de las medidas de tendencia central
+ 
+# Calcular la moda
+get_mode <- function(x) {
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+ 
+# Calcular las medidas de tendencia central
+media <- c(mean(proc_data$clasesocial), mean(proc_data$afav.venz), mean(proc_data$afav.latin), mean(proc_data$conf.md))
+mediana <- c(median(proc_data$clasesocial), median(proc_data$afav.venz), median(proc_data$afav.latin), median(proc_data$conf.md))
+moda <- c(get_mode(proc_data$clasesocial), get_mode(proc_data$afav.venz), get_mode(proc_data$afav.latin), get_mode(proc_data$conf.md))
+ 
+# Crear la tabla descriptiva
+tabla_descriptiva <- data.frame(
+  Variable = c("Clase Social", "afav.venz", "afav.latin", "conf.md"),
+  Media = media,
+  Mediana = mediana,
+  Moda = moda
+)
+ 
+ 
+# Formatear la tabla con kableExtra
+tabla_mtc<- tabla_descriptiva %>%
+  kbl() %>%
+  kable_styling(full_width = FALSE) %>%
+  row_spec(0, bold = TRUE)
+ 
+# Mostrar la tabla en el Viewer de RStudio
+tabla_mtc
+```
+
+\
+
 ```         
 ```
