@@ -218,7 +218,7 @@ proc_data %>% ggplot(aes(x = afav.venz)) + geom_bar(fill="purple")
 
 proc_data %>% ggplot(aes(x = clasesocial)) + geom_bar(fill="purple")
 
-#grafico a favor de la inmigracion en Chile
+#grafico a favor de la inmigracion en Chile: Este se utilizó para Quarto
 graf.in <- sjPlot::plot_stackfrq(dplyr:: select(proc_data, afav.venz,
                                                 afav.latin),
                                                 title= "A favor de la inmigración: Chile") + 
@@ -258,19 +258,33 @@ proc_data %>% ggplot(aes(x = afav.latin)) +
   xlab("A favor de la inmigración latina") +
   ylab("Cantidad")+
   facet_wrap(~clasesocial)
+
+frq(proc_data$afav.latin)
 frq(proc_data$clasesocial)
 
+#A favor de la inmigración latina en función por la confianza
+#en los medios de comunicación: Este se utilizó para Quarto
 
 proc_data %>% ggplot(aes(x = afav.latin)) + 
   geom_bar() +
   xlab("A favor de la inmigración latina") +
   ylab("Cantidad")+
-  facet_wrap(~sexo)
+  facet_wrap(~conf.md)
 
-frq(proc_data$sexo)
+frq(proc_data$conf.md)
+frq(proc_data$afav.latin)
 
-#guardar base proc_data para quarto documment
+#Lo mismo, pero con la inmigracion venezolana: Este se utilizó para Quarto
+proc_data %>% ggplot(aes(x = afav.venz)) + 
+  geom_bar() +
+  xlab("A favor de la inmigración latina") +
+  ylab("Cantidad")+
+  facet_wrap(~conf.md)
+
+frq(proc_data$afav.venz)
+frq(proc_data$conf.md)
+
+#guardar base proc_data para quarto document
 
 save(proc_data, file="input/data/proc_data.RData")
 
-d
