@@ -1,0 +1,28 @@
+{
+    "id": "CAD11863",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1713656587408.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "id": "2453c7037a3e4d298804cc6579b8886f",
+        "name": "grafico_afav_latin",
+        "title": "grafico_afav_latin",
+        "language": "R",
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 2590985653864,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1713656587408,
+    "read_only": false,
+    "read_only_alternatives": []
+}
