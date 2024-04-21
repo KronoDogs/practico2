@@ -3,9 +3,9 @@
     "path": "~/ofc211/practico2/proccesing/script de procesamiento de datos.R",
     "project_path": "proccesing/script de procesamiento de datos.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "2921242582",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1713473175900.0,
     "source_on_save": false,
     "relative_order": 2,
@@ -16,11 +16,11 @@
         "scrollLine": "178"
     },
     "folds": "",
-    "lastKnownWriteTime": 1713585923,
+    "lastKnownWriteTime": 1713659078,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1713656856972,
+    "last_content_update": 1713659078646,
     "read_only": false,
     "read_only_alternatives": []
 }

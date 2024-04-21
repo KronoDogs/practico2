@@ -183,7 +183,13 @@ tabla_mtc<- tabla_descriptiva %>%
 # Mostrar la tabla en el Viewer de RStudio
 tabla_mtc
 
+#tablas de frecuencias: Afav.venz, afav.latin, conf.md
 
+frq(proc_data$conf.md)
+
+frq(proc_data$afav.latin)
+
+frq(proc_data$afav.venz)
 
 #Librerias para graficos y tablas
 pacman::p_load(sjlabelled,
