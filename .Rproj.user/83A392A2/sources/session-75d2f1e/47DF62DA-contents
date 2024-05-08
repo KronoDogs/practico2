@@ -1,0 +1,171 @@
+---
+title: "El ascenso de los discursos de odio: Rol de los medios de comunicación mediáticos"
+author: "Benjamín Cachaña Varas"
+format: html
+editor: visual
+bibliography: practico2.bib
+link-citations: true
+---
+
+```{css}
+#| echo: false 
+p {
+  text-align: justify 
+  }
+```
+
+## El ascenso de los discursos de odio: Formulación de la problemática migratoria en Chile
+
+Durante el transcurso del nuevo milenio, en Chile, se ha evidenciado un cierto aumento en diferentes aspectos sobre los inmigrantes que llegan al país, lo cual ha producido opiniones que han variado demasiado a medida que las cifras sobre la cantidad de migrantes hayan ido en aumento, principalmente de origen latinoamericano, los cuales han producido una gran controversia para el país, aunque este fenómeno no ha sido excluyente en diferentes países de la región americana del globo, como puede ser en caso de Colombia o incluso en Estados Unidos. Esta tendencia al aumento de población migrante en Chile y en conjunto a demás problemáticas que atraviesa el país, ha traído consecuencias en diferentes dimensiones, tanto políticas, económicas, seguridad y morales para el Estado chileno. De este modo, Chile estaría en un escenario con ciertas complejidades en estas dimensiones, en donde, desde un punto de vista general, a la hora de identificar una problemática migratoria, la ciudadanía llega a un consenso ampliamente legitimado por sus pares, como puede ser por ejemplo el hecho que, a través de los resultados de la encuesta CADEM (2023) revelaría que un "77% de la población considera que la migración es mala para el país" y esto acompañado con, "el 86% cree que debe haber restricciones a la inmigración" [@nicolasgissiEntreMiedoXenofobia2023], estas afirmaciones revelarían una cierta legitimidad hacia un "discurso xenófobico y de"mano dura" en contra de personas de otros países, en donde, el foco de odio y repulsión se lo ha llevado principalmente los individuos migrantes venezolanos y colombianos, ya que estos han adquirido etiquetas negativas, como delincuentes o perturbadores del orden público, que de cierto modo, ha estandarizado la opinión de la ciudadanía en respecto a su actuar en el territorio chileno. Por tanto, nace un interés en torno a la intersubjetividad de los ciudadanos chilenos, en donde, se suele optar por una opinión de carácter discriminatoria hacia el migrante. De la misma forma, en torno a un interés sociológico en respecto al fenómeno, adquiere sentido el preguntarse ¿En qué medida la exposición de discursos políticos o mediáticos negativos influyen a la ciudadanía adoptar un discurso de caracter discriminatorio hacia la pobl
+
+La importancia de una postura discriminatoria del ciudadano común hacia el migrante, nos presenta un escenario muy particular, ya que, el sentido común nos lleva a crear un imaginario colectivo hacia la imagen de la persona que busca establecerse en otro lugar ajeno el de su origen, que de cierto modo, invita a examinar el rol que cumple los medios de comunicación y su influencia en este discurso intersubjetivo, en donde se podría reconocer una especie de relación entre dos variables planteadas, que a mayor exposición a noticias negativas a la población migrante, peor será la opinión de los sujetos hacia ellos, promoviendo un rol discriminador hacia ellos. En este punto es importante recalcar que los medios de comunicación, ya no es particularmente sólo a los canales de noticias, sino que, también lo es internet y las redes sociales, las cuales se configuran como potentes "herramientas que colaboren en la creación de una sociedad más participativa en materia política y social" [@laurabustosmartinezDiscursosOdioEpidemia2019]. Sin embargo, un fenómeno tan masivo como lo es internet, no presenta una sola cara, sino que, da lugar a la promoción de discursos de odio hacia diferentes grupos étnicos, lo cual, da el paso a las tan famosas noticias falsas o *fake news*, en donde, "pocas personas tienen la facultad, el tiempo y las habilidades de distinguir entre sesgos informativos, falsas noticias y simplificaciones" [@nicolasgissiEntreMiedoXenofobia2023], y esto resulta relevante a la hora de discutir los roles que tienen medios importantes de comunicación y la importancia que tiene las redes sociales a la hora de impactar e influir tanto en la percepción y actuar del ciudadano chileno hacia el migrante. De esta manera, entenderíamos que los roles que ejercen los medios de comunicación masivos influyen de distintas maneras el actuar y pensar de los ciudadanos chilenos sobre la población migrante. Entonces, a medida que un ciudadano chileno se encuentre expuesto a noticias mediáticas y de índole negativa acerca de algún acontecimiento que tenga lugar con una persona migrante, peor será su opinión sobre la población migrante, lo cual, permite y da paso a optar por un discurso discriminatorio. Por lo tanto, la creciente crisis migratoria y sus consecuencias sociales han producido una gran controversia en diferentes dimensiones para el Estado chileno, y para la propia ciudadanía, parece ser que el optar por posiciones discriminatorias resulta cada vez más un camino reconfortante, en donde, se le exige al gobierno medidas mucho más punitivas, dejando de lado soluciones acordes a los tratados gubernamentales, como los Derechos Humanos, debido que, existirían "muchos migrantes latinoamericanos reciben un trato discriminatorio al enfrentar las expulsiones u otras sanciones sin los estándares mínimos del debido proceso" [@danielquinterosNUEVACRIMIGRACIONVIEJA2016], lo cual, invita a la a la reflexión académica sobre esta pregunta direccionada hacia un problema estructural de la migración "¿estamos ante una crisis migratoria o ante una migración a causa de la crisis?" [@lucianagandiniCrisisMigracionPoblacion2020] y claro, en primera instancia se evidencia que la crisis migratoria ha generado múltiples estragos sistémicos en el país trasandino, sin embargo, después de un breve análisis, podríamos pensar que la crisis migratoria solo es una respuesta a problemas estructurales de las naciones comprometidas de América Latina, como lo es en el caso venezolano.
+
+## Medidas de tendencia central de las variables
+
+A partir de la base de datos proporcionada por Latinobarometro (2020), en donde se seleccionó algunas variables en función de la hipótesis planteada con anterioridad. En donde, se determinó utilizar la confianza en los medios de comunicación, a favor de la inmigración venezolana y a favor de la inmigración de la inmigración de personas pertenecientes a América Latina, todo esto a partir de las observaciones limitadas a las respuestas proporcionadas por los encuestados chilenos. De este modo, de primera instancia, observamos la tabla que indica las medidas de tendencia central de las variables en cuestión y sumando la clase social, la cual nos ayudará junto a sexo a evidenciar el comportamiento de las variables que corresponden a la hipótesis según estas variables demográficas. De esta manera, evidenciamos que la clase social que predomina para estas observaciones es la clase media baja, la cual expresa un promedio de 2.319, que dentro de las tablas de frecuencia se contabilizará con 345 casos, sin embargo, el hecho de que la media de la clase social se exprese de esa manera es debido también que la clase baja cuenta con 186 sujetos adherentes a esa categoría, lo cual, indica que la muestra proporcionada a nivel chileno se expresa principalmente en la clase social baja y media baja. En su contraparte, hallamos que la clase media se lleva el mayor número de casos, con 463 observaciones, pero la clase media alta tiene solo 24 observaciones, y para mayor asombro, en la categoría de la clase alta no encontramos personas identificadas en ese estrato social. Por lo tanto, la clase social, su mediana se expresa en que el 50% de los casos se halla en las categorías de media y clase bajas. Sin embargo, por lo dicho anteriormente por la clase media, la moda es de 3, la cual corresponde al número de categoría de respuesta asignada en la recodificación. 
+
+En la variable sobre a favor de la inmigración venezolana hacia el país, podemos identificar que la media de esta se manifiesta en la categoría negativo, expresando la posición de los sujetos en torno a esta variable, en la cual no estarían de acuerdo o a favor sobre que ciudadanos venezolanos lleguen al país. Y del mismo modo se evidencia tanto en la media como en su moda, en donde, el 50% afirma que, no estarían a favor de la inmigración de personas venezolanas al país, en donde las categorías muy negativo con (206) y la categoría "negativo" (464) evidencia la posición de los sujetos de investigación sobre la variable en cuestión. Más adelante veremos el comportamiento según otras variables en juego. Con una variable parecida a esta, a favor de la inmigración de ciudadanos latinoamericanos al país resulta tener un comportamiento parecido a esta variable, sin embargo, con ligeros cambios cuando más adelante observemos el gráfico. Esta variable presenta una media de 1.37, la cual corresponde a la categoría de respuesta de negativo, en donde sujeta 445 personas que marcaron estas categorías, y siguiendo esta línea, evidenciamos que, la mediana de esta variable, al igual que la anterior, manifiesta que el 50% de las personas marcaron las categorías muy negativo con 123, y negativo con 445 observaciones. Y la moda de la variable presenta el mismo comportamiento. De este modo, las personas tanto para las dos variables sobre si estar a favor de la inmigración latina o venezolana, se posicionan principalmente hacia un desacuerdo con las afirmaciones presentadas. 
+
+Ahora describiremos el comportamiento de una de las variables principales de la hipótesis planteada, la confianza en los medios de comunicación, que la mayoría se posiciona con poca confianza hacia los medios de comunicación, con 409 observaciones, que según dato se corresponde con la media, que presenta 1.05 de promedio. Y de esta misma forma, el 50% de las personas se hallan en las categorías de ninguna (0) con 290 casos, y poca (1) con 409. Por lo tanto, con bastante firmeza, la gran mayoría de personas no confía de manera general en los medios de comunicación, lo cual se le corresponde también la moda (1), que también representa la categoría poca confianza. 
+
+```{r}
+#| warning: false
+#| echo: false
+
+pacman::p_load(sjmisc, car, sjlabelled, haven)
+
+pacman::p_load(sjlabelled,
+               dplyr, 
+               stargazer,
+               summarytools, 
+               kableExtra, 
+               sjPlot,
+               corrplot, 
+               sessioninfo, 
+               ggplot2,
+               tidyverse,
+               xfun)
+             
+
+```
+
+## Tabla Descriptiva: Variables utilizadas
+
+```{r}
+#| warning: false
+#| echo: false
+
+
+
+load("input/data/proc_data.RData")
+
+#Tabla descriptiva de las medidas de tendencia central
+ 
+# Calcular la moda
+get_mode <- function(x) {
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+ 
+# Calcular las medidas de tendencia central
+media <- c(mean(proc_data$clasesocial), mean(proc_data$afav.venz), mean(proc_data$afav.latin), mean(proc_data$conf.md))
+mediana <- c(median(proc_data$clasesocial), median(proc_data$afav.venz), median(proc_data$afav.latin), median(proc_data$conf.md))
+moda <- c(get_mode(proc_data$clasesocial), get_mode(proc_data$afav.venz), get_mode(proc_data$afav.latin), get_mode(proc_data$conf.md))
+ 
+# Crear la tabla descriptiva
+tabla_descriptiva <- data.frame(
+  Variable = c("Clase Social", "afav.venz", "afav.latin", "conf.md"),
+  Media = media,
+  Mediana = mediana,
+  Moda = moda
+)
+ 
+ 
+# Formatear la tabla con kableExtra
+tabla_mtc<- tabla_descriptiva %>%
+  kbl() %>%
+  kable_styling(full_width = FALSE) %>%
+  row_spec(0, bold = TRUE)
+ 
+# Mostrar la tabla en el Viewer de RStudio
+tabla_mtc
+```
+
+# Tablas de frecuencias: Variables categóricas
+
+La primera variable que revisaremos es sobre la confianza en los medios de comunicación, la cual indica que su máxima categoría en torno a magnitud de observaciones se halla en "poca", la cual tiene un total de 409 observaciones, de una muestra posible de 1018 casos. Y de la misma forma le sigue la categoría "ninguna", que contiene un total de 290 observaciones. Por el otro lado de la lógica de la variable, sobre las personas que confían más en los medios de comunicación, hallamos la variable "algo" la cual cuenta con 288 observaciones, y del mismo modo, la categoría de respuesta "Mucha" tiene un total de 31 observaciones, la menor en función a esta categoría.
+
+```{r}
+#| warning: false
+#| echo: false
+
+frq(proc_data$conf.md)
+```
+
+En respecto a la variable "A favor de la inmigración latina", logramos evidenciar que la categoría de respuesta con mayor cantidad de observaciones es "Negativo", con un total de 445 observaciones. Sin embargo, la segunda categoría con más observaciones es "Positivo", con 399 datos. Y las categorías que manejan el menor número de observaciones son contradictorias entre sí, debido que, con una gran diferencia, la categoría "Muy negativo" cuenta con 123 observaciones, y la variable lógicamente contradictoria a esta es "Muy positivo" que cuenta con un total de 51 observaciones.
+
+```{r}
+#| warning: false
+#| echo: false
+
+frq(proc_data$afav.latin)
+```
+
+Y por último, la variable que sigue es parecida a la anterior, pero en la dirección que apunta es más específica, en donde, su foco de atención se halla en la inmigración venezonala. La variable "a favor de la inmigración venezolana" presenta algunos cambios que a lo largo del análisis descriptivo univariado iremos tratado. Esta variable presenta su categoría con mayor observaciones en "Negativo" con un total de 464, y le sigue, pero desde su contradicción, la categoría "Positivo" con 315 sujetos que marcaron esa opción. A esta categoría le sigue "Muy negativo" con un total de 206 observaciones, y por último, la categoría con la menor cantidad de observaciones es "Muy positivo" con tan solo 33 observaciones.
+
+```{r}
+#| warning: false
+#| echo: false
+
+frq(proc_data$afav.venz)
+```
+
+A través de esta breve exploración del comportamiento de estas variables visualizamos de primera instancia que las personas principalmente no confian en los medios de comunicación, en donde, si juntamos la categoría "Ninguna" y "Poca", logramos evidenciar que, el 68,6% de las personas marcaron una de estas opciones, mostrando su desconfianza principalmente hacia los medios de comunicación. Del mismo modo, hallamos que la variable sobre la inmigración latina y el acuerdo sobre ella acumula entre la categoría "Muy negativo" y "Negativo" un total de un 55.8% del total de las observaciones recopiladas en la variable. Y de la misma forma, la variable sobre estar a favor de la inmigración venezolana, vemos una subida de porcentaje considerable, en donde las personas que marcaron "Muy negativo" y "Negativo" acumulan un total de 65,8% del total de las observaciones, evidenciando una negativa hacia la inmigración venezolana en particular hacia el Estado chileno. Cabe recalcar que, el siguiente trabajo estadístico utilizó y utilizará herramientas propias de la estadística descriptiva univariada, la cual no permite llegar a conclusiones satisfactorias en términos estadísticos, por lo tanto, nos limitaremos a describir el comportamiento de las variables, y hablaremos en términos de "asociación entre variables" más que hablar sobre relaciones causales entre ellas.
+
+Ahora seguiremos con la observación y análisis descriptivo de los gráficos, los cuales contienen el comportamiento de las variables que configuran la hipótesis planteada en el presente trabajo para después detallar su comportamiento en función de la confianza en los medios de comunicación. 
+
+## Inmigración Latina e Inmgración Venezolana
+
+Con las variables seleccionadas en el presente estudio, buscamos explorar y describir el comportamiento de las variables en juego, en donde, detallaremos y describiremos el comportamiento de la variable a favor de la inmigración latinoamericana y la variable a favor de la inmigración venezolana al país. En donde, si observamos desde una perspectiva general las variables, podemos llegar a similares conclusiones, pero haciendo un especial tipo de análisis a la variable sobre la inmigración venezolana. Ambas variables presentan su mediana hacia la negativa sobre que los ciudadanos latinoamericanos y en especial enfoque, el venezolano se inserten en Chile, en donde con un 12,1% de las personas se posicionan como muy negativa hacia la inmigración latina, y en paralelo con sus categorías de respuesta, las personas también no estarían de acuerdo hacia la inmigración venezolana, en donde, la categoría de "muy negativa" y "negativa" en su conjunto suman 65,8% sobre la inmigración venezolana, mientras que, sobre la inmigración latina baja sustancialmente, con 55,8% de las respuestas, que representan hacia un desacuerdo a la inmigración latina. Las variables apuntan su sentido hacia el mismo punto, pero, se enfatizó en los inmigrantes venezolanos, ya que, actualmente, la ciudadanía chilena ha aumentado exponencialmente la población venezolana residente en el país, y con esto, en la cuestión se trató de cómo la ciudadanía se posiciona hacia una negativa especial hacia la población venezolana en temas de migración. Y de esta misma forma, lo podemos evidenciar en el comportamiento que adopta la variable en función de sus observaciones, ya que, los sujetos de investigación demuestran una mayor negativa hacia la inmigración venezolana en diferencia de la inmigración latinoamericana en general, lo cual, se representa a nivel descriptivo, en donde los sujetos demostraron un 10% más sobre el desacuerdo en comparación con la inmigración latina, por tanto se resaltaría que los sujetos presentan este desacuerdo, sobre su ingreso al país, especialmente mayor hacia los inmigrantes venezolanos (Ver gráfico 1).
+
+```{r}
+#| warning: false
+#| echo: false
+
+graf.in <- sjPlot::plot_stackfrq(dplyr:: select(proc_data, afav.venz,
+                                                afav.latin),
+                                                title= "A favor de la inmigración: Chile") + 
+  theme(legend.position="bottom")
+
+graf.in
+```
+
+## Inmigración y Confianza en Medios
+
+Y en función a lo mencionado anteriormente, lo cruzaremos con la variable confianza a los medios de comunicación. En donde, por decisiones metodológicas, no se realizó un índice sumativo entre las variables que tratan sobre la inmigración, ya que se busca en el presente estudio explorar y explicitar como la confianza en los medios de comunicación cambia su comportamiento en función de la diferenciación entre la inmigración venezolana y la inmigración latina. Las personas que confían en los medios de comunicación responden a un total de 312 observaciones, en la cual, en el gráfico 2, nos tenemos que fijar en la casilla 2, que explicita el comportamiento de las personas que confían en los medios de comunicación y su opinión al respecto de la inmigración de latinos al país. Esta detalla que, mayoritariamente, las personas que confían en los medios presentan una posición negativa hacia la inmigración, en donde las categorías de "negativo" y "muy negativo" son las que concentran y fijan la postura general que opta el gráfico 2 en la casilla 2, por lo tanto, de manera descriptiva, las personas que confían en los medios de comunicación optan por tener una postura negativa hacia la inmigración de latinos al país. Aunque, no debemos dejar de lado que en esta casilla, la categoría de respuesta que tiene más observaciones es la 2, que es la que representa una postura a favor de la inmigración latina, pero observando el gráfico nos damos cuenta de que manera general, las categorías 0 y 1 representa el mayor número de casos, que es la que representa una postura negativa hacia la inmigración latina, ya que en comparación, las categorías 2 y 3 no representa la mayoría de casos dentro de las personas que confían en los medios de comunicación. Pero, si vemos en este gráfico, en la casilla 1, observamos que las personas que confían poco en los medios de comunicación presentan un comportamiento similar que las personas que confían algo en los medios de comunicación, por lo cual se evidencia que, aunque las personas confíen o no en los medios de comunicación, su postura se centra en mayor medida hacia la negativa de la inmigración latina hacia el país trasandino.
+
+```{r}
+#| warning: false
+#| echo: false
+proc_data %>% ggplot(aes(x = afav.latin)) + 
+  geom_bar() +
+  xlab("A favor de la inmigración latina") +
+  ylab("Cantidad")+
+  facet_wrap(~conf.md)
+
+
+```
+
+Y de esta misma forma, pero en el caso específico de la variable que trata sobre si estar a favor de la inmigración venezolana en particular, en función de si los sujetos confían en los medios de comunicación. Observamos un comportamiento distinto en comparación con la variable anterior, ya que los medios de comunicación concentran de manera más intensa, una postura negativa hacia el ingreso de venezolanos al país, donde las categorías 1 y 2, que engloban la postura negativa, son las que ahora predominan absolutamente en el comportamiento de la variable. Y en contraposición, la casilla 1 del gráfico 3 presenta las personas que confían poco en los medios de comunicación, presenta el mismo comportamiento, en donde predomina la postura negativa hacia la inmigración venezolana, y lo mismo para las personas que no tienen ninguna confianza en los medios de comunicación, que es la casilla 0.
+
+```{r}
+#| warning: false
+#| echo: false
+proc_data %>% ggplot(aes(x = afav.venz)) + 
+  geom_bar() +
+  xlab("A favor de la inmigración latina") +
+  ylab("Cantidad")+
+  facet_wrap(~conf.md)
+```
+
+Por lo tanto, revisando los comportamiento y posturas que adquieren las observaciones en las variables, vemos que los sujetos se posicionan de una manera más negativa hacia la inmigración venezolana que hacia la inmigración latina en general. Por tanto, para ir concluyendo con el estudio, que ya habiendo repasado de manera descriptiva el análisis, podemos afirmar que existe un rol o posición negativa mayor sustancialmente hacia la población o migrantes venezolano que el resto de migrantes latinos, en donde los comportamientos de las variables indica que por lo menos el 65,8% de los sujetos de investigación se posicionan hacia esta dirección, lo cual, hacia los inmigrantes latinos se ve una postura también negativa hacia su ingreso, pero de menor medida en todas las observaciones descriptivas realizadas. Y ya tratando con la hipótesis planteada al inicio del trabajo, no podemos afirmar ni concluir que las personas por estar expuestos y confiar en los medios de comunicación tienden a orientar hacia una postura más negativa hacia la población migrante que viene a Chile, ya que, como se detalló anteriormente, aunque las personas confíen o no confíen en los medios de comunicación, se tiende de todas formas a optar por una postura negativa hacia la inmigración latina, y aún mayor hacia la inmigración venezolana. Sin embargo, se logró identificar que existe un rol más discriminatorio hacia los ciudadanos venezolanos que los ciudadanos latinos, por tanto, este estudio logró detallar el comportamiento y posturas de los sujetos de investigación sobre la confianza en los medios y la inmigración hacia Chile, aunque, no se pudo determinar si es que estas variables propuestas presentan una asociación positiva entre sí, pero sí logró explicitar que existe una postura diferente cuando se trata de abordar la inmigración venezolana versus la inmigración latina en general, esto puede ser por distintos factores los cuales faltarían por explorar, como por ejemplo que la base utilizada para este trabajo es del año 2020, y la versión más actualizada del año 2023 no contaba con las variables que se trató en este trabajo, por tanto, las conclusiones estadísticas se hallan limitadas. De este modo, la metodología empleada para realizar el análisis y comprobación de hipótesis tampoco cuenta con las herramientas adecuadas, ya que nos limitamos en la rama de la estadística descriptiva, por tanto, no podemos establecer relaciones causales con seguridad, y solo nos podemos limitar a afirmar asociaciones positivas entre las variables, aunque, para los datos e información trabajada se logró concluir que las variables sobre la inmigración hacia Chile y la confianza en los medios de comunicación trabajan como variables de independencia en función a determinados casos estadísticos. Por tanto, en un futuro se detallará más por este tema y buscaremos por más asociaciones sobre cómo los medios de comunicación pueden influir en las opiniones y posturas de los ciudadanos chilenos sobre la inmigración hacia Chile principalmente y también, buscar e explorar razones estadísticas del porqué cambian estas posturas si es que el ciudadano migrante es venezolano o residente de otro país de América Latina y el Caribe, pero por ahora nos limitaremos a recalcar este descubrimiento de la postura que optan los chilenos en particular cuando se habla de un inmigrante venezolano en comparación de un inmigrante del resto de países de América Latina y el Caribe.
