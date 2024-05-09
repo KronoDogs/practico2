@@ -15,7 +15,12 @@ proc_data <- latinobarometro2020 %>% select(p15st_d, # Medios de comunicacion
                                             s1, # Clase social
                                             sexo, # sexo
                                             edad, #edad
-                                            idenpa) # pais
+                                            idenpa, # pais
+                                            p37n_c, # A favor de recibir Inmigrantes haitianos
+                                            p39st_b, # Indice negativo inmigracion: trabajo
+                                            p39n_c, # Indice negativo inmigracion: crimen
+                                            p39n_e) # Indice negativo inmigracion: carga E
+
 
 # Comprobar y solo datos para Chile
 names(proc_data)
@@ -24,23 +29,26 @@ proc_data <- proc_data %>% dplyr::filter(idenpa==152)
 
 
 
-# recodificacion de variables
+# --------------------------------recodificacion de variables
 
 proc_data$p15st_d <- recode(proc_data$p15st_d, "c(-5,-4,-3,-2,-1)=NA")
 proc_data$p37n_b <- recode(proc_data$p37n_b, "c(-5,-4,-3,-2,-1)=NA")
 proc_data$p37n_d <- recode(proc_data$p37n_d, "c(-5,-4,-3,-2,-1,9)=NA")
+proc_data$p37n_c <- recode(proc_data$p37n_c, "c(-5,-4,-3,-2,-1,0)=NA")
 proc_data$s1 <- recode(proc_data$s1, "c(-5,-4,-3,-2,-1)=NA")
 
 proc_data$p15st_d <- recode(proc_data$p15st_d, "1=3; 2=2; 3=1; 4=0")
 proc_data$p37n_b <- recode(proc_data$p37n_b, "1=3; 2=2; 3=1; 4=0")
 proc_data$p37n_d <- recode(proc_data$p37n_d, "1=3; 2=2; 3=1; 4=0")
+proc_data$p37n_c <- recode(proc_data$p37n_c, "1=3; 2=2; 3=1; 4=0")
 proc_data$s1 <- recode(proc_data$s1, "1=5; 2=4; 3=3; 4=2; 5=1")
 
 
 proc_data <- proc_data %>% rename("conf.md"=p15st_d, # Confianza en los medios de comunicacion
                                   "afav.latin"=p37n_b, # A favor de la inmigracion latina
                                   "afav.venz"=p37n_d, # A favor de la inmigracion venezolana
-                                  "clasesocial"=s1) # Clase social 
+                                  "clasesocial"=s1, # Clase social
+                                  "afav.hait"=p37n_c) # A favor de la inmigración hatiana 
 
 
 
@@ -55,6 +63,11 @@ get_label(proc_data$afav.venz)
 
 proc_data$clasesocial <- set_label(x = proc_data$clasesocial,label = "Clase Social")
 get_label(proc_data$clasesocial)
+
+proc_data$afav.hait <- set_label(x = proc_data$afav.hait,label = "A favor: Haitianos")
+get_label(proc_data$afav.hait)
+
+frq(proc_data$afav.hait)
 
 install.packages("sjlabelled")
 library(sjlabelled)
@@ -71,17 +84,24 @@ proc_data$conf.md <- set_labels(proc_data$conf.md,
                                           "Mucha"=3))
 
 proc_data$afav.latin <- set_labels(proc_data$afav.latin,
-                                labels=c("Muy negativo"=0,
-                                         "Negativo"=1,
-                                         "Positivo"=2,
-                                         "Muy positivo"=3))
+                                labels=c("Muy en desacuerdo"=0,
+                                         "En desacuerdo"=1,
+                                         "De Acuerdo"=2,
+                                         "Muy de acuerdo"=3))
 
 
 proc_data$afav.venz <- set_labels(proc_data$afav.venz,
-                                   labels=c("Muy negativo"=0,
-                                            "Negativo"=1,
-                                            "Positivo"=2,
-                                            "Muy positivo"=3))
+                                   labels=c("Muy en desacuerdo"=0,
+                                            "En desacuerdo"=1,
+                                            "De Acuerdo"=2,
+                                            "Muy de acuerdo"=3))
+
+proc_data$afav.hait <- set_labels(proc_data$afav.hait,
+                                  labels=c("Muy en desacuerdo"=0,
+                                           "En desacuerdo"=1,
+                                           "De Acuerdo"=2,
+                                           "Muy de acuerdo"=3))
+
 
 
 proc_data$clasesocial <- set_labels(proc_data$clasesocial,
@@ -91,14 +111,67 @@ proc_data$clasesocial <- set_labels(proc_data$clasesocial,
                                            "Media baja"=2,
                                            "Baja"=1))
 
+#--------------- Ahora recodificamos más variables para el posterior indice
+frq(proc_data$p39st_b)
+
+proc_data$p39st_b <- recode(proc_data$p39st_b, "c(-5,-4,-3,-2,-1)=NA")
+
+proc_data$p39st_b <- recode(proc_data$p39st_b, "1=3; 2=2; 3=1; 4=0")
+
+proc_data <- proc_data %>% rename("in.trabajo"=p39st_b)
+                                  
+proc_data$in.trabajo <- set_label(x = proc_data$in.trabajo,label = "Inmigrantes quitan trabajo")
+get_label(proc_data$in.trabajo)
+                                  
+                                  
+proc_data$in.trabajo <- set_labels(proc_data$in.trabajo,
+                                   labels=c("Muy en desacuerdo"=0,
+                                            "En desacuerdo"=1,
+                                            "De Acuerdo"=2,
+                                            "Muy de acuerdo"=3))
+
+#----------------------- CRIMEN
+## p39st_c
+
+frq(proc_data$p39n_c)
+
+proc_data$p39n_c <- recode(proc_data$p39n_c, "c(-5,-4,-3,-2,-1)=NA")
+
+proc_data$p39n_c <- recode(proc_data$p39n_c, "1=3; 2=2; 3=1; 4=0")
+
+proc_data <- proc_data %>% rename("in.crimen"=p39n_c)
+
+proc_data$in.trabajo <- set_label(x = proc_data$in.crimen,label = "Inmigrantes aumentan el crimen")
+get_label(proc_data$in.crimen)
+
+
+proc_data$in.crimen <- set_labels(proc_data$in.crimen,
+                                   labels=c("Muy en desacuerdo"=0,
+                                            "En desacuerdo"=1,
+                                            "De Acuerdo"=2,
+                                            "Muy de acuerdo"=3))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 frq(proc_data$conf.md)
 frq(proc_data$afav.latin)
 frq(proc_data$afav.venz)
 frq(proc_data$clasesocial)
-
-
-
+frq(proc_data$afav.hait)
+frq(proc_data$in.trabajo)
+frq(proc_data$in.crimen)
 #recodificacion para la variable de sexo
 proc_data$sexo <- car::recode(proc_data$sexo, "1=0;2=1")
 
@@ -293,4 +366,25 @@ frq(proc_data$conf.md)
 #guardar base proc_data para quarto document
 
 save(proc_data, file="input/data/proc_data.RData")
+
+
+
+#-----parte de hacer correlación y indices
+
+pacman::p_load(dplyr, # Manipulacion datos
+               sjmisc, # Descriptivos
+               sjPlot, # Tablas
+               sjlabelled, #etiquetas
+               kableExtra, #Tablas
+               GGally, # Correlaciones
+               corrplot) # Correlaciones
+
+corin <- proc_data %>% mutate_all(~(as.numeric(.)))
+
+
+
+ola <- cor(base, use = "complete.obs")
+ola
+
+frq(base$afav.latin)
 
