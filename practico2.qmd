@@ -1,6 +1,6 @@
 ---
 title: "El ascenso de los discursos de odio: Rol de los medios de comunicación mediáticos"
-author: "Benjamín Cachaña Varas"
+author: "Benjamín Cachaña VarasA"
 format: html
 editor: visual
 bibliography: practico2.bib
