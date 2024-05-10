@@ -3,7 +3,7 @@
     "path": "~/practico3/practico2/practico2.qmd",
     "project_path": "practico2.qmd",
     "type": "quarto_markdown",
-    "hash": "2634973286",
+    "hash": "1676388003",
     "contents": "",
     "dirty": false,
     "created": 1711175107931.0,
@@ -19,15 +19,15 @@
         "scrollLine": "0",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "129:0",
+        "rmdVisualModeLocation": "128:0",
         "docOutlineSize": "50"
     },
     "folds": "",
-    "lastKnownWriteTime": 1715312342,
+    "lastKnownWriteTime": 1715312526,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1715312342454,
+    "last_content_update": 1715312526204,
     "read_only": false,
     "read_only_alternatives": []
 }
