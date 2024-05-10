@@ -168,4 +168,121 @@ proc_data %>% ggplot(aes(x = afav.venz)) +
   facet_wrap(~conf.md)
 ```
 
-Por lo tanto, revisando los comportamiento y posturas que adquieren las observaciones en las variables, vemos que los sujetos se posicionan de una manera más negativa hacia la inmigración venezolana que hacia la inmigración latina en general. Por tanto, para ir concluyendo con el estudio, que ya habiendo repasado de manera descriptiva el análisis, podemos afirmar que existe un rol o posición negativa mayor sustancialmente hacia la población o migrantes venezolano que el resto de migrantes latinos, en donde los comportamientos de las variables indica que por lo menos el 65,8% de los sujetos de investigación se posicionan hacia esta dirección, lo cual, hacia los inmigrantes latinos se ve una postura también negativa hacia su ingreso, pero de menor medida en todas las observaciones descriptivas realizadas. Y ya tratando con la hipótesis planteada al inicio del trabajo, no podemos afirmar ni concluir que las personas por estar expuestos y confiar en los medios de comunicación tienden a orientar hacia una postura más negativa hacia la población migrante que viene a Chile, ya que, como se detalló anteriormente, aunque las personas confíen o no confíen en los medios de comunicación, se tiende de todas formas a optar por una postura negativa hacia la inmigración latina, y aún mayor hacia la inmigración venezolana. Sin embargo, se logró identificar que existe un rol más discriminatorio hacia los ciudadanos venezolanos que los ciudadanos latinos, por tanto, este estudio logró detallar el comportamiento y posturas de los sujetos de investigación sobre la confianza en los medios y la inmigración hacia Chile, aunque, no se pudo determinar si es que estas variables propuestas presentan una asociación positiva entre sí, pero sí logró explicitar que existe una postura diferente cuando se trata de abordar la inmigración venezolana versus la inmigración latina en general, esto puede ser por distintos factores los cuales faltarían por explorar, como por ejemplo que la base utilizada para este trabajo es del año 2020, y la versión más actualizada del año 2023 no contaba con las variables que se trató en este trabajo, por tanto, las conclusiones estadísticas se hallan limitadas. De este modo, la metodología empleada para realizar el análisis y comprobación de hipótesis tampoco cuenta con las herramientas adecuadas, ya que nos limitamos en la rama de la estadística descriptiva, por tanto, no podemos establecer relaciones causales con seguridad, y solo nos podemos limitar a afirmar asociaciones positivas entre las variables, aunque, para los datos e información trabajada se logró concluir que las variables sobre la inmigración hacia Chile y la confianza en los medios de comunicación trabajan como variables de independencia en función a determinados casos estadísticos. Por tanto, en un futuro se detallará más por este tema y buscaremos por más asociaciones sobre cómo los medios de comunicación pueden influir en las opiniones y posturas de los ciudadanos chilenos sobre la inmigración hacia Chile principalmente y también, buscar e explorar razones estadísticas del porqué cambian estas posturas si es que el ciudadano migrante es venezolano o residente de otro país de América Latina y el Caribe, pero por ahora nos limitaremos a recalcar este descubrimiento de la postura que optan los chilenos en particular cuando se habla de un inmigrante venezolano en comparación de un inmigrante del resto de países de América Latina y el Caribe.
+Por lo tanto, revisando los comportamiento y posturas que adquieren las observaciones en las variables, vemos que los sujetos se posicionan de una manera más negativa hacia la inmigración venezolana que hacia la inmigración latina en general. Por tanto, para ir concluyendo con el estudio, que ya habiendo repasado de manera descriptiva el análisis, podemos afirmar que existe un rol o posición negativa mayor sustancialmente hacia la población o migrantes venezolano que el resto de migrantes latinos, en donde los comportamientos de las variables indica que por lo menos el 65,8% de los sujetos de investigación se posicionan hacia esta dirección, lo cual, hacia los inmigrantes latinos se ve una postura también negativa hacia su ingreso, pero de menor medida en todas las observaciones descriptivas realizadas. Y ya tratando con la hipótesis planteada al inicio del trabajo, no podemos afirmar ni concluir que las personas por estar expuestos y confiar en los medios de comunicación tienden a orientar hacia una postura más negativa hacia la población migrante que viene a Chile, ya que, como se detalló anteriormente, aunque las personas confíen o no confíen en los medios de comunicación, se tiende de todas formas a optar por una postura negativa hacia la inmigración latina, y aún mayor hacia la inmigración venezolana. Sin embargo, se logró identificar que existe un rol más discriminatorio hacia los ciudadanos venezolanos que los ciudadanos latinos, por tanto, este estudio logró detallar el comportamiento y posturas de los sujetos de investigación sobre la confianza en los medios y la inmigración hacia Chile, aunque, no se pudo determinar si es que estas variables propuestas presentan una asociación positiva entre sí, pero sí logró explicitar que existe una postura diferente cuando se trata de abordar la inmigración venezolana versus la inmigración latina en general, esto puede ser por distintos factores los cuales faltarían por explorar, como por ejemplo que la base utilizada para este trabajo es del año 2020, y la versión más actualizada del año 2023 no contaba con las variables que se trató en este trabajo, por tanto, las conclusiones estadísticas se hallan limitadas. De este modo, la metodología empleada para realizar el análisis y comprobación de hipótesis tampoco cuenta con las herramientas adecuadas, ya que nos limitamos en la rama de la estadística descriptiva, por tanto, no podemos establecer relaciones causales con seguridad, y solo nos podemos limitar a afirmar asociaciones positivas entre las variables, aunque, para los datos e información trabajada se logró concluir que las variables sobre la inmigración hacia Chile y la confianza en los medios de comunicación trabajan como variables de independencia en función a determinados casos estadísticos. Por tanto, en un futuro se detallará más por este tema y buscaremos por más asociaciones sobre cómo los medios de comunicación pueden influir en las opiniones y posturas de los ciudadanos chilenos sobre la inmigración hacia Chile principalmente y también, buscar e explorar razones estadísticas del porqué cambian estas posturas si es que el ciudadano migrante es venezolano o residente de otro país de América Latina y el Caribe, pero por ahora nos limitaremos a recalcar este descubrimiento de la postura que optan los chilenos en particular cuando se habla de un inmigrante venezolano en comparación de un inmigrante del resto de países de América Latina y el Caribe.\
+
+## Correlaciones de las variables de interés
+
+Para la correlación y la posterior creación de índice ponderado de xenofobia, la base de datos se forzó a que sus variables sean numéricas, ya que de este modo es permitido el análisis de correlación de Pearson, permitiendo ver las asociaciones de las variables de la base de datos que se utilizará a partir de este punto, la cual, solo contiene las variables de interés a trabajar.
+
+Ahora pasaremos a explorar e explicar un gráfico de correlación de Pearson, el cual cuenta con variables de interés nuevas en comparación a las anteriores trabajadas, en donde ahora encontraremos las siguientes variables, confianza en los medios de comunicación; a favor de la inmigración latina, a favor de la inmigración venezolana, a favor de la inmigración haitiana; los inmigrantes vienen a competir por nuestros puestos de trabajo; los inmigrantes causan un aumento del crimen; los inmigrantes son una carga para el estado. Una vez mencionada las variables a tomar en cuenta, he de recordar de que estas variables ahora tendrán un nuevo nivel de medición acorde a las respuestas para después componer un índice ponderado. Por tanto, el nivel de medición corresponde a una escala de acuerdo, la cual, el valor 0 es "Muy en desacuerdo", valor 1 es "En desacuerdo", valor 2 es "De acuedo" y valor 0 es "Muy de acuerdo".
+
+```{r}
+#| warning: false
+#| echo: false
+
+
+load("input/data/basecor.RData")
+library(GGally)
+```
+
+```{r}
+#| warning: false
+#| echo: false
+
+
+Mcor2 <- cor(dplyr::select(basecor,conf.md, afav.latin, afav.hait, afav.venz,
+                           in.trabajo, in.crimen, in.carga))
+corrplot.mixed(Mcor2)
+
+```
+
+En el siguiente gráfico muestra las asociación de las variables, en donde, como se puede observar, las variables que presentan mayor asociación son "afav.venz" que es a favor de la inmigración venezolana y "afav.hait" que es a favor de la inmigración haitiana, de este modo, el puntaje de correlación de Pearson entrega que ambas variables estarían asociadas de manera positiva con un 0.76 puntos, lo cual estaríamos ante una relación entre las variables bastante fuerte (+0.5), lo cual, se ve reflejado también por el fenómeno que buscan medir ambas variables, ya que si revisamos las variables restantes que miden el grado de acuerdo sobre la inmiogración, que es la de "afav.latin" que es a favor de la inmigración latina, vemos que entrega puntajes parecidos. Por tanto, "afav.latin" con "afav.venz" tiene un puntaje de correlación de 0.68 puntos, indicando una asociación positiva, y del mismo modo con "afav.hait" el cual tiene un puntaje de 0.75 con "afav.latin". Esto significa que todas las variables que miden el grado de acuerdo sobre la inmigración hacia Chile están fuertemente asociadas entre sí, las cuales, todas entregan un puntaje de r de Pearson mayor a 0.5, indicando que, a medida que aumenta una variable, la otra también lo hará, en donde, esta lógica se aplica para todas las variables y relaciones entre ellas. Cabe recalcar que este estadístico no menciona que variables son las independientes o dependientes, por tanto, estaríamos ante una asociación de tipo lineal positiva bidireccional en todas las relaciones de las variables sobre la inmigración, en donde, cada variable cuando aumenta, la otra aumentará en proporción según la escala de medición anteriormente explicitada y explicada.
+
+En el caso de las variables que miden afirmaciones de acuerdo o desacuerdo, identificamos que la asociación entre "in.trabajo" y "in.carga" presentan un puntaje de Pearson de 0.52, lo cual significa que ambas variables estarían asociadas de manera positiva. Del mismo modo se observa con "in.trabajo" y "in.crimen", las cuales presentan un puntaje de 0.42, siendo una asociación positiva medianamente fuerte. Y por último tenemos la relación positiva entre "in.crimen" y "in.carga", las cuales presentan un puntaje de 0.48 puntos, en donde su asociación es medianamente fuerte. Lo anterior mencionado refleja que las variables que miden estas afirmaciones sobre la población migrante de carácter negativo estarían asociadas en promedio un 0.43 puntos de la correlación de Pearson, indicando que mayoritariamente estas variables tienen una relación bidireccional medianamente fuerte, y para el caso de las variables que miden el grado de acuerdo sobre la inmigración migrante es de 0.73, expresando que estas variables tienen una relación bidireccional realmente fuerte. Sin embargo, con respecto a la variable de confianza con los medios de comunicación "conf.md" su asociación con las demás variables es mayoritariamente con todas de independencia bidireccional.
+
+En el lado contrario, encontramos que principalmente las asociaciones entre las variables de acuerdo sobre la migración y las variables que miden afirmaciones negativas sobre la población migrante estarían asociadas de forma negativa, pero con una fuerza débil principalmente en la asociación, Porque, el gráfico evidencia que la asociación negativa más grande es la de "afav.latin" y "in.carga" con un puntaje de -0.31, lo cual presenta un nivel de asociación moderado de tipo negativo, lo cual evidencia que a medida que sube una variable, la otra baja de forma proporcional, aunque siempre hay que tener en cuenta que se desconoce cual es la variable dependiente e independiente de este estadístico. Siguiendo revisando los resultados de estas correlaciones, encontramos de igual forma que la variable "in.carga" con la variable "afav.hait" encuentran un puntaje de correlación de -0.31 puntos, expresando una asociación negativa de las variables, de magnitud moderada. Y las demás asociaciones de variables se mueven en torno a esas magnitudes, en donde su significado aproximado simplemente se mueve de forma negativa entre un -0.20 y -0.31, lo que en general es una asociación negativa moderada o débil de las variables. Ahora, la observaremos en un gráfico de dispersión que presentará las asociaciones respaldando la información entregada anteriormente.\
+\
+
+```{r}
+#| warning: false
+#| echo: false
+
+
+basecor2 <- basecor %>% select(afav.latin, afav.venz, afav.hait, in.trabajo, in.crimen, in.carga, conf.md)
+```
+
+```{r}
+#| warning: false
+#| echo: false
+
+basecorOFICIAL <- basecor2 %>%
+  rowwise() %>%
+  mutate(afav.venz = sum(c(afav.hait, afav.latin), na.rm = TRUE))
+
+ggpairs(basecor2)
+
+```
+
+\
+Ahora pasaremos con la construcción de dos índices ponderados que miden los niveles de Xenofobia de los encuestados hacia la población migrante, midiendo diferentes aspectos, como afirmaciones y su grado de acuerdo sobre que diferentes inmigrantes vengan hacia el país. Este índice fue creado a partir de una escala de medición estandarizada y que sigue la misma lógica entre cada una de las variables, en donde, el nivel de medición corresponde a una escala de acuerdo, la cual, el valor 0 es "Muy en desacuerdo", valor 1 es "En desacuerdo", valor 2 es "De acuedo" y valor 0 es "Muy de acuerdo", los cuales, fueron extraídos a partir de las variables; a favor de la inmigración latina, a favor de la inmigración venezolana, a favor de la inmigración haitiana; los inmigrantes vienen a competir por nuestros puestos de trabajo; los inmigrantes causan un aumento del crimen; los inmigrantes son una carga para el estado. Que como se mencionó antes, miden el acuerdo sobre los inmigrantes, sus acciones y efectos a través de afirmaciones y precisamente, si es que las personas están a favor de su respectiva migración hacia la nación.
+
+Este índice ponderado presenta pesos específicos, que acorde a la investigación previamente realizada, se asigno que la variable "afav.venz" presentará un peso de 40% del total del índice, de este modo, la variable que le sigue es "afav.latin" que contiene un 30% del total. Y la última variable de tipo a favor o no de la inmigración "afav.hait" cuenta con un 30% de la ponderación, este es la conformación del índice de la xenofobia que mide el grado de acuerdo hacia recibir inmigrantes de estos tipos de países y de toda latinoamerica.
+
+Por otro lado, el segundo índice toma las variables "in.trabajo"; "in.carga" y "in.crimen", en donde sus ponderaciones son 30%, 40% y 30% respectivamente, las cuales miden las afirmaciones sobre la población migrante.
+
+Una vez mencionado los pesos de las variables, pasaremos a su respectiva fundamentación a partir de los descubrimientos del estudio. La variable "afav.venz" cuenta con la mayor ponderación debido que, con el respectivo análisis descriptivo de esta variable, se descubrió que las personas cuentan con una negación extra hacia este grupo en específico en comparación con la variable "afav.latin" que como vimos, contaban con una diferencia de alrededor de un 10% hacia la negación o en esta ocasión de un desacuerdo hacia la inmigración específica del migrante venezolano. Para la variable "afav.hait" se estableció un 30% de la ponderación debido que no representó mayores niveles o datos significativos para el análisis sobre un caso específico de población migrante hacia el país. Y para el indice de xenofobia 2 que toma las variables que miden las afirmaciones de carácter negativo de la inmigración de forma generalizada, considerando la variable de "in.carga" con la mayor ponderación debido que cuenta en el contexto chileno, en donde se entiende que el Estado debe ser "el lugar central en la disputa por los sentidos, prácticas y representaciones en torno a la definición de la cuestión migratoria. La regulación de los movimientos contribuye, en parte, a la construcción de la estaticidad del Estado" [@angélicaalvitesbaiadera2012]. Por tanto, como ocurre en el contexto chileno, se optó a darle mayor carga a esta variable, que representó una de las principales polémicas a la hora de tratar la cuestión migratoria. Mientras que las demás variables se optó por mantener los mismos pesos por términos metodológicos\
+En primera instancia, para revisar los índices, se presentará una tabla descriptiva indicando las medidas de tendencia central de "indicexen1" y "indicexen2" que corresponde al indice de xenofobia de los chilenos encuestados sobre el recibir inmigrantes y sobre afirmaciones de carácter discriminatorio hacia los inmigrantes respectivamente.
+
+```{r}
+#| warning: false
+#| echo: false
+
+summary(basecor$indicexen1)
+summary(basecor$indicexen2)
+
+```
+
+Se observa que principalmente, los chilenos se mueven en el primer indice, en las categorías de respuesta de 1, la cual representa el grado de desacuerdo hacia que inmigrantes de diferentes nacionalidades migren hacia el país. Y en correspondencia, con el índice de xenofobia 2, se indica que los sujetos en promedio estarían inclinado en la categorías de acuerdo sobre afirmaciones de carácter discriminador de esta población, ya que la mediana de este índice es 2, el cual indica que los inmigrantes provocan efectos negativos en la nación de distinto tipo, a partir de las creencias y opiniones de las personas. Es decir, el 50% de las personas afirma que los inmigrantes causan el aumento del crimen, son una carga para el estado y que vienen a quitar el trabajo a los chilenos. Y claro, de este modo, vemos que la mediana del primer índice indica que las personas no estarían de acuerdo en recibir inmigrantes de nacionalidades como la haitiana, venezolana o del resto de los países de América Latina, por lo tanto, el 50% de los encuestados no estarían de acuerdo en recibir inmigrantes de estas nacionalidades mencionadas.
+
+Ahora presentaremos un histograma para cada índice que identifica de mejor manera cómo la xenofobia se despliega en los sujetos de estudio, de nacionalidad chilena. El primer histograma indica sobre el grado de acuerdo de recibir inmigrantes que hemos tratado durante todo el estudio
+
+```{r}
+#| warning: false
+#| echo: false
+
+hist(basecor$indicexen1, 
+     main = "Histograma de Índice de Xenofobia en Chile (1)", 
+     xlab = "Índice de Xenofobia",
+     ylab = "Frecuencia",
+     col = "purple", 
+     border = "yellow", 
+     breaks = 10 
+)
+
+
+```
+
+Este histograma identificamos que la gran mayoría de respuesta de los encuestados se dirige hacia el desacuerdo de que los inmigrantes de nacionalidades dentro de América Latina vengan al país. centrándose en las categorías de 0 y 1, que corresponden a "Muy en desacuerdo" y "En desacuerdo" respectivamente. Y muy pocos casos se encuentran en las categorías del acuerdo hacia su ingreso al país.
+
+Ahora se presentará el segundo histograma que indica la respuestas de los encuestados sobre los grados de acuerdo sobre afirmaciones en términos negativos de la población migrante.\
+
+```{r}
+#| warning: false
+#| echo: false
+
+hist(basecor$indicexen2, 
+     main = "Histograma de Índice de Xenofobia en Chile (2)", 
+     xlab = "Índice de Xenofobia 2",
+     ylab = "Frecuencia",
+     col = "orange", 
+     border = "pink", 
+     breaks = 10 
+)
+
+```
+
+Vemos que la distribución se mueve principalmente hacia el "Muy de Acuerdo" y "De acuerdo" que son los valores 2 y 3 respectivamente. Ya que como se mencionó antes, la gran mayoría de personas perciben a la población migrante de América Latina como portadores de efectos negativos en la nación.
+
+Estos dos índices ponderados elaborados indican que los grados de xenofobia de los sujetos chilenos, en estas dos dimensiones tratadas, son altos, en donde se observa que predomina un rechazo hacia el ingreso de migrantes al país, y del mismo modo, predomina el grado de acuerdo hacia afirmaciones en términos negativos de la población migrante. Por tanto, de manera generalizada, se marca una tendencia hacia el rechazo de estas personas, adjudicándoles causas negativas en diferentes áreas del país, ya sea en términos de seguridad nacional o en términos de decrecimientos económicos a costa de su llegada y establecimiento paulatino en el país, en donde, el ciudadano chileno opta por un discurso de odio hacia el migrante. En donde ambos índices ponderados demuestran de manera estadísticamente significativa que los chilenos optan por este tipo de discurso. Aunque cabe recalcar que este análisis debe ser más profundo e indagando mayor cantidad de variables para sacar conclusiones acordes a la validez externa en términos de calidad metodológica en las ciencias sociales.
+
+\

@@ -112,7 +112,7 @@ proc_data$clasesocial <- set_labels(proc_data$clasesocial,
                                            "Baja"=1))
 
 #--------------- Ahora recodificamos más variables para el posterior indice
-frq(proc_data$p39st_b)
+frq(proc_data$in.trabajo)
 
 proc_data$p39st_b <- recode(proc_data$p39st_b, "c(-5,-4,-3,-2,-1)=NA")
 
@@ -133,7 +133,7 @@ proc_data$in.trabajo <- set_labels(proc_data$in.trabajo,
 #----------------------- CRIMEN
 ## p39st_c
 
-frq(proc_data$p39n_c)
+frq(proc_data$in.crimen)
 
 proc_data$p39n_c <- recode(proc_data$p39n_c, "c(-5,-4,-3,-2,-1)=NA")
 
@@ -141,7 +141,7 @@ proc_data$p39n_c <- recode(proc_data$p39n_c, "1=3; 2=2; 3=1; 4=0")
 
 proc_data <- proc_data %>% rename("in.crimen"=p39n_c)
 
-proc_data$in.trabajo <- set_label(x = proc_data$in.crimen,label = "Inmigrantes aumentan el crimen")
+proc_data$in.crimen <- set_label(x = proc_data$in.crimen,label = "Inmigrantes aumentan el crimen")
 get_label(proc_data$in.crimen)
 
 
@@ -150,17 +150,26 @@ proc_data$in.crimen <- set_labels(proc_data$in.crimen,
                                             "En desacuerdo"=1,
                                             "De Acuerdo"=2,
                                             "Muy de acuerdo"=3))
+#----------- carga para el estado
+## p39st_e
+
+frq(proc_data$p39n_e)
+
+proc_data$p39n_e <- recode(proc_data$p39n_e, "c(-5,-4,-3,-2,-1)=NA")
+
+proc_data$p39n_e <- recode(proc_data$p39n_e, "1=3; 2=2; 3=1; 4=0")
+
+proc_data <- proc_data %>% rename("in.carga"=p39n_e)
+
+proc_data$in.carga <- set_label(x = proc_data$in.carga,label = "Inmigrantes son una carga para el Estado")
+get_label(proc_data$in.carga)
 
 
-
-
-
-
-
-
-
-
-
+proc_data$in.carga <- set_labels(proc_data$in.carga,
+                                  labels=c("Muy en desacuerdo"=0,
+                                           "En desacuerdo"=1,
+                                           "De Acuerdo"=2,
+                                           "Muy de acuerdo"=3))
 
 
 
@@ -172,6 +181,7 @@ frq(proc_data$clasesocial)
 frq(proc_data$afav.hait)
 frq(proc_data$in.trabajo)
 frq(proc_data$in.crimen)
+frq(proc_data$in.carga)
 #recodificacion para la variable de sexo
 proc_data$sexo <- car::recode(proc_data$sexo, "1=0;2=1")
 
@@ -379,12 +389,91 @@ pacman::p_load(dplyr, # Manipulacion datos
                GGally, # Correlaciones
                corrplot) # Correlaciones
 
-corin <- proc_data %>% mutate_all(~(as.numeric(.)))
+#forzar a la base que todas sus variables sean de tipo numérica
+
+
+class(proc_data$conf.md)
+class(proc_data$in.carga)
+
+#forzar a la base que todas sus variables sean de tipo numérica
+basecor <- proc_data %>% mutate_all(~(as.numeric(.)))
+
+Mcor <- cor(basecor, use = "complete.obs")
+
+corrplot.mixed(Mcor)
+
+#estos dos codigos son para la correlacion de todas las variables
+
+#ahora veremos correlación en variables en especifico. - Este para Quarto
+
+
+Mcor2 <- cor(dplyr::select(basecor,conf.md, afav.latin, afav.hait, afav.venz,
+                           in.trabajo, in.crimen, in.carga))
+corrplot.mixed(Mcor2)
+
+
+#Indice ponderado.
+#Pesos para las variables en c(
+afavlatin <- basecor$afav.latin
+afavvenz <- basecor$afav.venz
+afavhait <- basecor$afav.hait
+
+
+pesosvar <- c(0.30, 0.40, 0.30)
+
+indicexen1 <- (afavlatin * pesosvar[1] + afavvenz * pesosvar[2] + afavhait * pesosvar[3])
+
+basecor$indicexen1 <- indicexen1
+
+
+#ahora para las de afirmacion
+
+intrabajo <- basecor$in.trabajo
+incarga <- basecor$in.carga
+incrimen <- basecor$in.crimen
+
+
+pesosvar2 <- c(0.30, 0.40, 0.30)
+
+indicexen2 <- (intrabajo * pesosvar[1] + incarga * pesosvar[2] + incrimen * pesosvar[3])
+
+basecor$indicexen2 <- indicexen2
 
 
 
-ola <- cor(base, use = "complete.obs")
-ola
 
-frq(base$afav.latin)
+#una vez hecho el indice ponderado "Indice de Xenofobia" guardaremos la base "basecor" para quarto
+
+save(basecor, file="input/data/basecor.RData")
+
+
+#ahora crearemos una base para un gráfico de dispersión con variables de interés
+
+basecor2 <- basecor %>% select(afav.latin, afav.venz, afav.hait, in.trabajo, in.crimen, in.carga, conf.md)
+
+basecor2 <- basecor2 %>%
+  rowwise() %>%
+  mutate(afav.venz = sum(c(afav.hait, afav.latin), na.rm = TRUE))
+
+ggpairs(basecor2)
+
+# Cargar la base de datos basecor si aún no lo has hecho
+# Suponiendo que basecor es un data frame con la variable indicexen
+
+# Crear el histograma: Indice de Xenofobia
+
+hist(basecor$indicexen, 
+     main = "Histograma de Índice de Xenofobia en Chile", 
+     xlab = "Índice de Xenofobia",
+     ylab = "Frecuencia",
+     col = "purple", 
+     border = "yellow", 
+     breaks = 10 
+)
+
+
+#MTC
+summary(basecor$indicexen1)
+
+summary(basecor$indicexen2)
 

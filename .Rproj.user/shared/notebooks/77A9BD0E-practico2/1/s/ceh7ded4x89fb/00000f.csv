@@ -1,0 +1,15 @@
+"0","#| warning: false"
+"0","#| echo: false"
+"0",""
+"0","frq(proc_data$afav.venz)"
+"1","[31mA favor: Venezolanos (x)[39m[34m <numeric>[39m 
+[34m# total N=902 valid N=902 mean=1.16 sd=0.79[39m
+
+Value |             Label |   N | Raw % | Valid % | Cum. %
+----------------------------------------------------------
+    0 | Muy en desacuerdo | 187 | 20.73 |   20.73 |  20.73
+    1 |     En desacuerdo | 415 | 46.01 |   46.01 |  66.74
+    2 |        De Acuerdo | 269 | 29.82 |   29.82 |  96.56
+    3 |    Muy de acuerdo |  31 |  3.44 |    3.44 | 100.00
+ <NA> |              <NA> |   0 |  0.00 |    <NA> |   <NA>
+"

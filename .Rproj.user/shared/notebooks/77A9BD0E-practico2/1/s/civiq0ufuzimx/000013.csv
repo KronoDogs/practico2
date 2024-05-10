@@ -1,0 +1,8 @@
+"0","#| warning: false"
+"0","#| echo: false"
+"0",""
+"0",""
+"0","Mcor2 <- cor(dplyr::select(basecor,conf.md, afav.latin, afav.hait, afav.venz,"
+"0","                           in.trabajo, in.crimen, in.carga))"
+"0","corrplot.mixed(Mcor2)"
+"0",""

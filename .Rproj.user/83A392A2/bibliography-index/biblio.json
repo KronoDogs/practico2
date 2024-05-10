@@ -229,6 +229,33 @@
             "title": "Entre el miedo y la xenofobia: Política migratoria, vulnerabilidad social y emergencia de un Estado penal en Chile (2018-2023)",
             "title-short": "Entre el miedo y la xenofobia",
             "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Angélica Alvites Baiadera"
+                },
+                {
+                    "family": "Baiadera",
+                    "given": "Angélica Alvites"
+                },
+                {
+                    "family": "Angélica Alvites Baiadera"
+                }
+            ],
+            "id": "angélicaalvitesbaiadera2012",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        1,
+                        1
+                    ]
+                ]
+            },
+            "note": "MAG ID: 2150200529 S2ID: fd89bd54524e6b47ec511e1ee411df17e17bad53",
+            "title": "Estado y migración. Discursos sobre políticas migratorias",
+            "type": "article-journal"
         }
     ],
     "project_biblios": []
