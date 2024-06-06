@@ -1,0 +1,45 @@
+"0",""
+"0","knitreg(list(regresion4, regresion5), "
+"0","        custom.model.names = c(""Modelo 1"","
+"0","                               ""Modelo 2""),"
+"0","        custom.note = ""*** p < 0.001; ** p < 0.01; * p < 0.05"","
+"0","        custom.coef.names = c(""Intercepto"", "
+"0","                              ""confianza en los medios"","
+"0","                              ""Edad"", "
+"0","                              ""clase social"","
+"0","                              ""Educacion Nivel Medio"","
+"0","                              ""Educacion Universitario Incompleto"","
+"0","                              ""Educacion Universitario Completo"","
+"0","                              ""Educación Institutos incompletos"","
+"0","                              ""Educación Institutos completos""),"
+"0","        caption = ""Índice de Xenofobia"","
+"0","        caption.above = TRUE)"
+"1","
+==========================================================
+                                    Modelo 1    Modelo 2  
+----------------------------------------------------------
+Intercepto                            1.79 ***    1.77 ***
+                                     (0.06)      (0.09)   
+confianza en los medios              -0.01       -0.01    
+                                     (0.02)      (0.02)   
+Edad                                 -0.00                
+                                     (0.00)               
+clase social                          0.01       -0.02    
+                                     (0.02)      (0.02)   
+Educacion Nivel Medio                             0.05    
+                                                 (0.09)   
+Educacion Universitario Incompleto                0.03    
+                                                 (0.08)   
+Educacion Universitario Completo                  0.08    
+                                                 (0.10)   
+Educación Institutos incompletos                  0.11    
+                                                 (0.09)   
+Educación Institutos completos                    0.16    
+                                                 (0.11)   
+----------------------------------------------------------
+R^2                                   0.00        0.01    
+Adj. R^2                             -0.00       -0.00    
+Num. obs.                           902         747       
+==========================================================
+*** p < 0.001; ** p < 0.01; * p < 0.05
+"
