@@ -46,6 +46,7 @@ pacman::p_load(sjlabelled,
                tidyverse,
                xfun)
              
+pacman::p_load(dplyr, car, sjmisc, sjPlot, sjlabelled, stargazer, kableExtra, corrplot, texreg, ggplot2, ggpubr)
 
 ```
 
@@ -292,6 +293,20 @@ En esta parte de nuestra investigación, propondemos distintos modelos con varia
 ```{r}
 #| warning: false
 #| echo: false
+
+load("input/data/lastbase.RData")
+```
+
+```{r}
+#| warning: false
+#| echo: false
+
+regresion1 <- lm(indicexen1 ~ conf.md, data=lastbase)
+
+regresion2 <- lm(indicexen1 ~ edad, data=lastbase)
+
+regresion3 <- lm(indicexen1 ~ clasesocial, data=lastbase)
+
 knitreg(list(regresion1, regresion2, regresion3), 
         custom.model.names = c("Modelo 1",
                                "Modelo 2",
@@ -317,6 +332,14 @@ En este apartado propondremos modelos de regresión múltiple utilizando las var
 ```{r}
 #| warning: false
 #| echo: false
+
+
+regresion4 <- lm(indicexen1 ~ conf.md + edad + clasesocial, data=lastbase)
+
+
+regresion5 <- lm(indicexen1 ~ conf.md + clasesocial + Educacion, data=lastbase)
+
+
 
 knitreg(list(regresion4, regresion5), 
         custom.model.names = c("Modelo 1",

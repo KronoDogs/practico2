@@ -790,3 +790,4 @@ ggeffects::ggpredict(regresion5, terms = c("Educacion")) %>%
                      breaks = seq(0,16, by = 1))
 
 
+load("input/data/lastbase.RData")

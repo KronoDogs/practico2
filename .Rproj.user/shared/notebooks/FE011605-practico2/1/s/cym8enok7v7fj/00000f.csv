@@ -15,4 +15,5 @@
 "0","               tidyverse,"
 "0","               xfun)"
 "0","             "
+"0","pacman::p_load(dplyr, car, sjmisc, sjPlot, sjlabelled, stargazer, kableExtra, corrplot, texreg, ggplot2, ggpubr)"
 "0",""
