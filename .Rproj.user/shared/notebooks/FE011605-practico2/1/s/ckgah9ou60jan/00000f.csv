@@ -1,2 +1,4 @@
+"0","#| warning: false"
+"0","#| echo: false"
 "0",""
 "0","load(""input/data/lastbase.RData"")"

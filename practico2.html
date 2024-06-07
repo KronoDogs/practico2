@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -257,10 +257,6 @@ En primera instancia, para revisar los índices, se presentará una tabla descri
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
   0.000   1.000   1.000   1.233   2.000   3.000 </code></pre>
 </div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  0.000   1.600   2.000   1.929   2.400   3.000 </code></pre>
-</div>
 </div>
 <p>Se observa que principalmente, los chilenos se mueven en el primer indice, en las categorías de respuesta de 1, la cual representa el grado de desacuerdo hacia que inmigrantes de diferentes nacionalidades migren hacia el país. Y en correspondencia, con el índice de xenofobia 2, se indica que los sujetos en promedio estarían inclinado en la categorías de acuerdo sobre afirmaciones de carácter discriminador de esta población, ya que la mediana de este índice es 2, el cual indica que los inmigrantes provocan efectos negativos en la nación de distinto tipo, a partir de las creencias y opiniones de las personas. Es decir, el 50% de las personas afirma que los inmigrantes causan el aumento del crimen, son una carga para el estado y que vienen a quitar el trabajo a los chilenos. Y claro, de este modo, vemos que la mediana del primer índice indica que las personas no estarían de acuerdo en recibir inmigrantes de nacionalidades como la haitiana, venezolana o del resto de los países de América Latina, por lo tanto, el 50% de los encuestados no estarían de acuerdo en recibir inmigrantes de estas nacionalidades mencionadas.</p>
 <p>Ahora presentaremos un histograma para cada índice que identifica de mejor manera cómo la xenofobia se despliega en los sujetos de estudio, de nacionalidad chilena. El primer histograma indica sobre el grado de acuerdo de recibir inmigrantes que hemos tratado durante todo el estudio</p>
@@ -279,8 +275,479 @@ En primera instancia, para revisar los índices, se presentará una tabla descri
 </div>
 <p>Vemos que la distribución se mueve principalmente hacia el “Muy de Acuerdo” y “De acuerdo” que son los valores 2 y 3 respectivamente. Ya que como se mencionó antes, la gran mayoría de personas perciben a la población migrante de América Latina como portadores de efectos negativos en la nación.</p>
 <p>Estos dos índices ponderados elaborados indican que los grados de xenofobia de los sujetos chilenos, en estas dos dimensiones tratadas, son altos, en donde se observa que predomina un rechazo hacia el ingreso de migrantes al país, y del mismo modo, predomina el grado de acuerdo hacia afirmaciones en términos negativos de la población migrante. Por tanto, de manera generalizada, se marca una tendencia hacia el rechazo de estas personas, adjudicándoles causas negativas en diferentes áreas del país, ya sea en términos de seguridad nacional o en términos de decrecimientos económicos a costa de su llegada y establecimiento paulatino en el país, en donde, el ciudadano chileno opta por un discurso de odio hacia el migrante. En donde ambos índices ponderados demuestran de manera estadísticamente significativa que los chilenos optan por este tipo de discurso. Aunque cabe recalcar que este análisis debe ser más profundo e indagando mayor cantidad de variables para sacar conclusiones acordes a la validez externa en términos de calidad metodológica en las ciencias sociales.</p>
-<p><br>
+</section>
+<section id="modelos-de-regresión-lineal-simple-y-múltiples" class="level2">
+<h2 class="anchored" data-anchor-id="modelos-de-regresión-lineal-simple-y-múltiples">Modelos de Regresión Lineal Simple y Múltiples</h2>
+<p>En esta parte de nuestra investigación, propondemos distintos modelos con variables que no se han utilizado hasta el momento. En los siguientes modelos de regresión comprenderemos la variable dependiente “indicexen1” la cual contiene todas las variables anteriormente utilizadas, que miden opinión de los encuestados sobre diferentes ámbitos de la población migrante. Los siguientes modelos contienen 3 variables independientes en respecto de la dependiente, de forma lineal en primera instancia para cada modelo, por tanto, se establecerá la asociación entre este indice según clase social, la confianza en los medios y la edad de los encuestados.</p>
+
+<table class="texreg" style="margin: 10px auto;border-collapse: collapse;border-spacing: 0px;color: #000000;border-top: 2px solid #000000;">
+<caption>
+Xenofobia
+</caption>
+<thead>
+<tr>
+<th style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</th>
+<th style="padding-left: 5px;padding-right: 5px;">
+Modelo 1
+</th>
+<th style="padding-left: 5px;padding-right: 5px;">
+Modelo 2
+</th>
+<th style="padding-left: 5px;padding-right: 5px;">
+Modelo 3
+</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-top: 1px solid #000000;">
+<td style="padding-left: 5px;padding-right: 5px;">
+Intercepto
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+1.79<sup>***</sup>
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+1.80<sup>***</sup>
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+1.76<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.02)
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.04)
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.04)
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+confianza en los medios
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+-0.02
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.02)
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+Edad
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+-0.00
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.00)
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+clase social
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+0.01
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.02)
+</td>
+</tr>
+<tr style="border-top: 1px solid #000000;">
+<td style="padding-left: 5px;padding-right: 5px;">
+R<sup>2</sup>
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+0.00
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+0.00
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+0.00
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+Adj. R<sup>2</sup>
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+-0.00
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+-0.00
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+-0.00
+</td>
+</tr>
+<tr style="border-bottom: 2px solid #000000;">
+<td style="padding-left: 5px;padding-right: 5px;">
+Num. obs.
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+902
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+902
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+902
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="font-size: 0.8em;" colspan="4">
+*** p &lt; 0.001; ** p &lt; 0.01; * p &lt; 0.05
+</td>
+</tr>
+</tfoot>
+
+</table>
+<p>Como se puede observar, la variable confianza en los medios contiene un intercepto de 1.78, lo cual indica que cuando la confianza en los medios de comunicación es 0, en promedio, las personas tenderán a tener un puntaje de 1.78, indicando un nivel medio de la variable dependiente. En este mismo sentido, el segundo modelo indica que las personas con 0 años tienen un nivel de xenofobia de 1.81, lo cual a nivel sustantivo, no proporciona ninguna información. Y por último, el intercepto del tercer modelo menciona que cuando la clase social de las personas es 1, su nivel de xenofobia será de 1.78 puntos.</p>
+<p>Con respecto a los coeficientes de regresión de cada modelo, podemos evidenciar que en las confianza en los medios es de -0.01, lo cual indica que a medida que aumenta en una unidad la confianza en los medios de comunicación, el indice de xenofobia de los encuestados disminuirá 0.01 en respecto a la escala de medición de la variable dependiente. Sin embargo, este coeficiente no es significativo estadísticamente, ya que el valor p es mayor a 0.05. Por tanto, no habría una relación significativa entre la variable dependiente y la independiente, lo cual, también se puede evidenciar por su respectivo coeficiente de regresión. Del mismo modo ocurre en en el modelo 2, en donde su coeficiente de regresión es de -0.00, este valor prácticamente indica que no hay asociación entre ambas variables, ya que su valor p no es significativo, ya que es mayor a 0.05. Y en respecto del modelo 3 ocurre lo mismo, ya que, observamos el coeficiente de regresión del modelo es -0.01, indicando que cuando sube en una unidad la clase social de las personas, el indice de xenofobia bajará en 0.01. Y lo mismo ocurre con los anteriores modelos, este coeficiente no es significativo, por tanto, no hay una relación significativa entre la clase social y la variable dependiente. Esto último se respalda con el R cuadrado, ya que como se observa que en todos los modelos tienen este valor de 0.00, lo que significa que las variables independientes incluidas en los modelos no explican una cantidad significativa de variabilidad de la variable dependiente, de este modo, los modelos no son estadísticamente relevantes y no son adecuados para predecir la variable del índice de xenofobia.</p>
+</section>
+<section id="modelos-de-regresión-múltiple" class="level2">
+<h2 class="anchored" data-anchor-id="modelos-de-regresión-múltiple">Modelos de Regresión Múltiple</h2>
+<p>En este apartado propondremos modelos de regresión múltiple utilizando las variables de los modelos de regresión simple.</p>
+
+<table class="texreg" style="margin: 10px auto;border-collapse: collapse;border-spacing: 0px;color: #000000;border-top: 2px solid #000000;">
+<caption>
+Índice de Xenofobia
+</caption>
+<thead>
+<tr>
+<th style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</th>
+<th style="padding-left: 5px;padding-right: 5px;">
+Modelo 1
+</th>
+<th style="padding-left: 5px;padding-right: 5px;">
+Modelo 2
+</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-top: 1px solid #000000;">
+<td style="padding-left: 5px;padding-right: 5px;">
+Intercepto
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+1.79<sup>***</sup>
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+1.77<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.06)
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.09)
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+confianza en los medios
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+-0.01
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+-0.01
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.02)
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.02)
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+Edad
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+-0.00
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.00)
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+clase social
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+0.01
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+-0.02
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.02)
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.02)
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+Educacion Nivel Medio
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+0.05
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.09)
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+Educacion Universitario Incompleto
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+0.03
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.08)
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+Educacion Universitario Completo
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+0.08
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.10)
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+Educación Institutos incompletos
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+0.11
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.09)
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+Educación Institutos completos
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+0.16
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+&nbsp;
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+(0.11)
+</td>
+</tr>
+<tr style="border-top: 1px solid #000000;">
+<td style="padding-left: 5px;padding-right: 5px;">
+R<sup>2</sup>
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+0.00
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+0.01
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px;padding-right: 5px;">
+Adj. R<sup>2</sup>
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+-0.00
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+-0.00
+</td>
+</tr>
+<tr style="border-bottom: 2px solid #000000;">
+<td style="padding-left: 5px;padding-right: 5px;">
+Num. obs.
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+902
+</td>
+<td style="padding-left: 5px;padding-right: 5px;">
+747
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="font-size: 0.8em;" colspan="3">
+*** p &lt; 0.001; ** p &lt; 0.01; * p &lt; 0.05
+</td>
+</tr>
+</tfoot>
+
+</table>
+<p>En el modelo 1 propone como variable dependiente el Índice de Xenofobia propuesto en el inicio del apartado de este tipo de modelos, y las variables que buscan explicar el comportamiento de esta variable la confianza en los medios de comunicación, la edad y la clase social. En el caso del intercepto, cuando todas las variables independietnes son iguales a cero, el índice de xenofobia es de 1.79 puntos, en una escala de 0 a 4. En donde el valor es altamente significativo, debido que, el valor p menor a 0.001. En el caso de la confianza en los medios, se interpreta que hay una disminución en su asociación de un 0.01 en respecto al índice de xenofobia. Sin embargo, los resultados obtenidos no son estadísticamente significativos. En el caso de la edad no tiene ningún impacto signficativo, ya que su coeficiente de regresión es 0.00, por tanto, no habría una asociación entre ambas variables. Y con la clase social podemos evidenciar tiene un reducido efecto, aunque no llega a ser significativo, ya que se observa que por cada aumento unitario en las categorías de la clase social, el aumento del índice de la xenofobia presentará un incremento de 0.01, en donde el coeficiente de regresión es muy cercano a 0. Y en línea general, el modelo presenta un R cuadrado de un 0% de la variabilidad en el índice de xenofobia, lo que sugiere que las variables independientes incluidas en el modelo no lograr capturar la varianza de esta variable de interés, por tanto, no resultan como buenos predictores.</p>
+<p>En el caso del modelo 2 podemos evidenciar que su intercepto es de 1.77, con un valor altamente significativo, ya que el valor p es menor a 0.001. En respecto a la confianza en los medios y la clase social no tienen un efecto significativo en la variable dependiente, que es el mismo índice de xenofobia. En el caso de la variable de los niveles educativos desglosados en sus diferentes categorías, encontramos que la Educación Universitaria incompleta presenta el menor coeficiente de regresión, indicando que las personas con este nivel educativo tienen un índice de xenofobia de un 0.03 mayor que la categoría de referencia, que es el nivel educativo de Sin estudios. De la misma forma, el Nivel Medio de educación tiene un coeficiente de regresión de un 0.05 puntos mayor que la categoría de referencia, y le sigue el nivel Universitario completo, el cual tiene un coeficiente de 0.08 en su índice de xenofobia. Y en el caso del nivel educacional de los institutos, los incompletos tienen un coeficiente de regresión de 0.11 puntos de índice de xenofobia y por último los completos, presentan un coeficiente de 0.16 puntos de índice de xenofobia. En conclusión, este modelo no resulta adecuado para predecir la variable dependiente, lo que se corresponde con los valores obtenidos en cada coeficiente de regresión de las variables propuestas, ya que cada valor es cercano a 0, por tanto sus respectivos Betas no presentan una asociación estadísticamente significativa, por tanto, estas variables no son adecuadas para predecir valores del índice de la xenofobia.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="practico2_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="cálculo-de-valores-predichos-de-modelos-de-regresión" class="level2">
+<h2 class="anchored" data-anchor-id="cálculo-de-valores-predichos-de-modelos-de-regresión">Cálculo de valores predichos de Modelos de Regresión</h2>
+<p>En respecto a los valores predichos no se puden sacar conclusiones sustantivas debido a lo mencionado en la interpretación de los modelos de regresión lineal simple y múltiple. Como los valores no son signiticativos y que no se logra observar diferencias entre las categorías de las variables independientes de esta predicción sobre el índice de xenofobia, no podemos decir mucho de estos valores, ya que el modelo no es adecuado para realizar predicciones concisas sobre la variable dependiente.<br>
 </p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="practico2_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
 
 </section>
 </section>
