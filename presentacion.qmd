@@ -1,0 +1,44 @@
+---
+title: "El ascenso de los discursos de odio: Rol de los medios de comunicación mediáticos"
+author: "Benjamín Cachaña"
+format:
+  revealjs: 
+    theme: night
+editor: visual
+---
+
+# Propósitos de la investigación
+
+Comprobar la hipótesis: A medida que las personas confian en los medios de comunicación, puede haber un aumento en los niveles de xenofobia de las personas.
+
+Fuente de datos: latinobarometro2020
+
+## Medidas de tendencia central
+
+![](output/grafico6)
+
+## Datos descriptivos: Distribución de datos de las principales variables
+
+![](output/afavlatinConfmd.png)
+
+## A favor de la inmigración venezolana en respecto a la confianza en los medios de comunicación
+
+![](output/afavvenz-confmd.png)
+
+
+## Distinción entre inmigrantes venezolanos en comparación al resto de inmigrantes latinoamericanos.
+![](output/grafico3)
+
+
+
+## Distribución de la confianza en los medios de comunicación
+
+![](output/grafico4)
+
+
+## Índice ponderado de los niveles de xenofobia de los encuestados
+![](output/grafico5)
+
+```{r}
+1 + 1
+```

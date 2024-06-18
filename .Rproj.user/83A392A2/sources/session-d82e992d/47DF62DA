@@ -1,6 +1,6 @@
 {
     "id": "47DF62DA",
-    "path": "~/finalOFC/practico2/practico2.qmd",
+    "path": "~/finalOFC/presentacionOFC/practico2/practico2.qmd",
     "project_path": "practico2.qmd",
     "type": "quarto_markdown",
     "hash": "2206754996",
@@ -19,15 +19,15 @@
         "scrollLine": "0",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "40203:19510",
+        "rmdVisualModeLocation": "25359:5661",
         "docOutlineSize": "50"
     },
     "folds": "",
-    "lastKnownWriteTime": 1717727401,
+    "lastKnownWriteTime": 1718686191,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1717727401846,
+    "last_content_update": 1718686191857,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -1,9 +1,9 @@
 {
     "id": "B4C9ADF2",
-    "path": "~/finalOFC/practico2/proccesing/script de procesamiento de datos.R",
+    "path": "~/finalOFC/presentacionOFC/practico2/proccesing/script de procesamiento de datos.R",
     "project_path": "proccesing/script de procesamiento de datos.R",
     "type": "r_source",
-    "hash": "145365798",
+    "hash": "2873687309",
     "contents": "",
     "dirty": false,
     "created": 1713473175900.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "792,0",
-        "scrollLine": "767"
+        "cursorPosition": "695,0",
+        "scrollLine": "674"
     },
     "folds": "",
-    "lastKnownWriteTime": 1717727402,
+    "lastKnownWriteTime": 1718686193,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1717727402787,
+    "last_content_update": 1718686193343,
     "read_only": false,
     "read_only_alternatives": []
 }

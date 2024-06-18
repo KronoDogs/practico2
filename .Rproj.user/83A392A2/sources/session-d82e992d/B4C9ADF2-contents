@@ -225,21 +225,21 @@ proc_data %>% dplyr::group_by(clasesocial) %>% summarise(mean(conf.md, na.rm=TRU
 #Representacion de tablas descriptivas para las variables
 library(sjPlot)
 
-sjt.xtab(proc_data$clasesocial, proc_data$conf.md, encoding = "UTF-12")
+ <- sjt.xtab(proc_data$clasesocial, proc_data$conf.md, encoding = "UTF-12")
 
-sjt.xtab(proc_data$clasesocial, proc_data$afav.latin, encoding = "UTF-12")
+<- sjt.xtab(proc_data$clasesocial, proc_data$afav.latin, encoding = "UTF-12")
 
 sjt.xtab(proc_data$clasesocial, proc_data$afav.venz, encoding = "UTF-12")
 
-#lo mismo pero con la variable sexo
+#lo mismo pero con la variable
 
-sjt.xtab(proc_data$sexo, proc_data$conf.md, encoding = "UTF-12")
+grafico1 <- sjt.xtab(proc_data$conf.md, proc_data$afav.latin, encoding = "UTF-12")
+grafico1
+grafico2 <- sjt.xtab(proc_data$conf.md, proc_data$afav.venz, encoding = "UTF-12")
+grafico2
 
-sjt.xtab(proc_data$sexo, proc_data$afav.latin, encoding = "UTF-12")
-
-sjt.xtab(proc_data$sexo, proc_data$afav.venz, encoding = "UTF-12")
-
-
+ggsave(grafico1, file="output/grafico1.png")
+ggsave(grafico2, file="output/grafico2.pdf")
 #Tabla descriptiva de las medidas de tendencia central
 
 # Calcular la moda
@@ -359,6 +359,7 @@ frq(proc_data$clasesocial)
 #A favor de la inmigración latina en función por la confianza
 #en los medios de comunicación: Este se utilizó para Quarto
 
+
 proc_data %>% ggplot(aes(x = afav.latin)) + 
   geom_bar() +
   xlab("A favor de la inmigración latina") +
@@ -416,6 +417,22 @@ Mcor2 <- cor(dplyr::select(basecor,conf.md, afav.latin, afav.hait, afav.venz,
                            in.trabajo, in.crimen, in.carga))
 corrplot.mixed(Mcor2)
 
+lastbase <- lastbase %>% mutate_all(~(as.numeric(.)))
+
+
+Mcor3 <- cor(dplyr::select(lastbase, afav.latin, afav.hait, afav.venz,
+                           in.trabajo, in.crimen, in.carga))
+corrplot.mixed(Mcor3)
+
+
+lastbase <- dplyr::select(lastbase, afav.latin, afav.hait, afav.venz, in.trabajo, in.crimen, in.carga) %>% na.omit()
+Mcor3 <- cor(lastbase)
+corrplot.mixed(Mcor3)
+str(Mcor3)
+print(Mcor3)
+
+frq(lastbase$afav.latin)
+frq(lastbase$in.crimen)
 
 #Indice ponderado.
 #Pesos para las variables en c(
@@ -666,8 +683,15 @@ indicexen1 <- (afavlatin * pesosvar[1] + afavvenz * pesosvar[2] + afavhait * pes
 lastbase$indicexen1 <- indicexen1
 
 frq(lastbase$indicexen1)
-
-
+#Presentacion
+hist(lastbase$indicexen1, 
+     main = "Histograma de Índice de Xenofobia en Chile", 
+     xlab = "Índice de Xenofobia",
+     ylab = "Frecuencia",
+     col = "purple", 
+     border = "yellow", 
+     breaks = 10 
+)
 
 pacman::p_load(dplyr, car, sjmisc, sjPlot, sjlabelled, stargazer, kableExtra, corrplot, texreg, ggplot2, ggpubr)
 

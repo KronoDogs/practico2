@@ -1,0 +1,7 @@
+"0","#| warning: false"
+"0","#| echo: false"
+"0","proc_data %>% ggplot(aes(x = afav.latin)) + "
+"0","  geom_bar() +"
+"0","  xlab(""A favor de la inmigración latina"") +"
+"0","  ylab(""Cantidad"")+"
+"0","  facet_wrap(~conf.md)"
